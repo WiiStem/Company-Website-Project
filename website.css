@@ -33,8 +33,8 @@ h1 {
     text-align: center;
 }
 
-.badge-primary {
-    color:white;
+.badge--primary {
+    color:var(--color-hero);
 }
 
 .hero {
@@ -44,16 +44,28 @@ h1 {
 .hero_tagline {
     font-size: 2rem;
     margin: 2rem 0 5rem;
+    color:var(--color-hero);
+    text-align: center;
 }
+
 
 .btn--primary {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
     margin: 0;
+    background-color: var(--color-secondary);
 }
 
+.btn--primary :hover{
+    color:var(--color-info);
+}
+
+.btn-secondary {
+    margin: 0;
+    background-color: var(--color-primary);
+}
+
+.btn-secondary :hover{
+    color:var(--color-hero);
+}
 
 .hero_image {
     width: 100%;
@@ -70,14 +82,6 @@ h1 {
 }
 
 #cards {
-    padding: 0.5rem;
-}
-
-#cards_2 {
-    padding: 0.5rem;
-}
-
-#cards_3 {
     padding: 0.5rem;
 }
 
@@ -104,7 +108,7 @@ h1 {
 }
 
 .card-wrapper > .card {
-    width: 50%;
+    width: 49%;
     box-sizing: border-box;
 }
 
@@ -124,5 +128,5 @@ h1 {
 }
 
 footer {
-    background-color: var(--color-info);
+    background-color: var(--color-footer);
 }
